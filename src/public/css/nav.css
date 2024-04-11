@@ -1,0 +1,145 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 80px;
+    background: rgb(32, 32, 26);
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    color: wheat;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: wheat;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: auto 4px;
+}
+
+.menu .navbar ul li .enlace1 {
+    background-color: aqua;
+    color: rgb(26, 25, 25);
+}
+
+.menu .navbar ul li .enlace2 {
+    background-color: rgb(0, 255, 55);
+    color: rgb(26, 25, 25);
+}
+
+.menu .navbar ul li .enlace3 {
+    background-color: rgb(255, 187, 0);
+    color: rgb(26, 25, 25);
+}
+
+.menu .navbar ul li .enlace4 {
+    background-color: rgb(0, 81, 255);
+    color: rgb(26, 25, 25);
+}
+
+.menu .navbar ul li .enlace5 {
+    background-color: rgb(204, 0, 255);
+    color: rgb(26, 25, 25);
+}
+
+.menu .navbar ul li .enlace6 {
+    background-color: rgba(255, 251, 0, 0.863);
+    color: rgb(26, 25, 25);
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.cerrar-sesion {
+    background: rgb(245, 81, 31);
+    font-size: 18px;
+    color: wheat;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto auto auto 7px;
+}
+
+.cerrar-sesion:hover{
+    background-color: rgb(114, 124, 54);
+    color: white;
+}
+
+@media(max-width:991px){
+    .content{
+        min-height: 70px;
+    }
+
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(32, 32, 26);
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}

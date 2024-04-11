@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: rgb(0,0,0);
+  background:  rgb(34, 33, 33);
+  color: wheat;
+}
+
+body>div{
+  font-family:  "Reddit Mono", monospace;
+  width: 23rem;
+  height: 31rem;
+  flex-direction: column;
+  background-color: transparent;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 4.5px solid rgba(42, 42, 43, 0.3);
+}
+.titulo{
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: rgb(245, 213, 154);
+}
+.campo{
+  background-color: black;
+  color: wheat;
+  border: none;
+  outline: none;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2.2rem;
+  display: block;
+  border-radius: 3.5px;
+}
+.campo:focus{
+  background-color: rgb(29, 28, 25);
+}
+.boton{
+  background-color: rgb(226, 228, 98);
+}
+.boton:hover{
+  background-color: rgb(27, 27, 14);
+}
+.enlace{
+  font-size: 1.1rem;
+  color: rgb(230, 167, 51);  
+  transition: all .3s;
+}
+.enlace:hover{
+  color: rgb(255, 166, 0);  
+}
+.label{
+  color: wheat;
+}
+
+.error{
+    margin-top: 13px;
+    color: rgb(241, 17, 17);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.escondido{
+    display: none;
+}
